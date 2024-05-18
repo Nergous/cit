@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cit/static/css/main.18d246b2.css",
+    "main.js": "/cit/static/js/main.03dac202.js",
+    "index.html": "/cit/index.html",
+    "main.18d246b2.css.map": "/cit/static/css/main.18d246b2.css.map",
+    "main.03dac202.js.map": "/cit/static/js/main.03dac202.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18d246b2.css",
+    "static/js/main.03dac202.js"
+  ]
+}
