@@ -1,0 +1,46 @@
+.title {
+    color: var(--0050-a-0, #0050A0);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 50px
+}
+
+.title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: var(--0050-a-0, #0050A0);
+    width: 30%;
+    margin: -30px auto;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .title {
+
+        font-size: 24px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .title {
+        font-size: 12px;
+    }
+
+
+    .title:after {
+        margin: 0px auto;
+    }
+
+}

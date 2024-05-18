@@ -1,0 +1,128 @@
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 95px;
+    padding-right: 95px;
+
+    border: 1px solid #E2E2E2;
+    background-color: #FFF;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 12.5px;
+    padding-top: 12.5px;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    color: #5C5C5C;
+    font-family: "Montserrat", sans-serif, mons;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    color: #5C5C5C;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.header__bottom {
+    height: 100px;
+    width: 100%;
+    background: #FFF;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__button {
+    color: var(--Dark-Gray, #111);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1070px) {
+    .header__button {
+        font-size: 12px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 950px) {
+    .header__buttons {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header__left>div {
+        font-size: 0px;
+    }
+
+    .header__right>div {
+        font-size: 0px;
+    }
+
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header__buttons {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+    }
+
+    .header__button {
+        font-size: 16px;
+        margin: 0 10px;
+        white-space: nowrap;
+    }
+
+}

@@ -1,0 +1,91 @@
+.course {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-bottom: 50px;
+    z-index: 0;
+}
+
+.course::-webkit-scrollbar {
+    display: none;
+}
+
+.course>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.left {
+    position: sticky;
+    top: 50%;
+    left: 5%;
+    height: 64px;
+    border-radius: 8px;
+    border: 4px solid var(--0887-e-2, #0887E2);
+    background: var(--ffffff, #FFF);
+    color: #0887E2;
+    z-index: 5;
+}
+
+.right {
+    position: sticky;
+    top: 50%;
+    right: 10%;
+    height: 64px;
+
+    border-radius: 8px;
+    border: 4px solid var(--0887-e-2, #0887E2);
+    background: var(--ffffff, #FFF);
+    color: #0887E2;
+    z-index: 5;
+}
+
+
+
+.left:hover svg path,
+.right:hover svg path {
+    fill: #fff;
+    /* Цвет фона или контрастного цвета для инверсии */
+}
+
+.left:hover,
+.left:active,
+.right:hover,
+.right:active {
+    background-color: #0887E2;
+    border: 4px solid white;
+    /* Основной цвет кнопки */
+}
+
+@media screen and (max-width: 400px) {
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    .left {
+        right: 75%;
+        top: 40%;
+    }
+
+    .right {
+        right: 5%;
+        top: 40%;
+    }
+
+    .course {
+        margin-top: 50px;
+    }
+
+    .course div:last-child {
+        margin-right: 0px;
+    }
+
+
+}
